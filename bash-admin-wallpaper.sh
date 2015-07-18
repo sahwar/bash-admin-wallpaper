@@ -43,8 +43,8 @@ convert -size "$SCREEN_SIZE" xc:"$BLUE" -font "$FONT" -pointsize "$FONT_SIZE" -f
 
 # Сложи като тапет на десктопа
 # За Gnome2 също може би MATE
-#gconftool-2 -t string -s /desktop/gnome/background/picture_filename "$IMAGE_PATH"
+gconftool-2 -t string -s /desktop/gnome/background/picture_filename "$IMAGE_PATH"
 # За Gnome3 и Unity
-gsettings set org.gnome.desktop.background picture-uri "$IMAGE_PATH"
+#gsettings set org.gnome.desktop.background picture-uri "$IMAGE_PATH"
 # За тези които липсват
 #display -size "$SCREEN_SIZE" -window root "$IMAGE_PATH"
